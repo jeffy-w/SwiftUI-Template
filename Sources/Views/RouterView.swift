@@ -22,6 +22,9 @@ struct RouterView: View {
         case .temp:
             TempView(model: appModel.temp, router: appModel.router)
 
+        case .smartBudget:
+            SmartBudgetView()
+
         // MARK: - 日记路由
 
         case .diaryList:
@@ -63,8 +66,7 @@ struct RouterView: View {
         // MARK: - 番茄钟路由
 
         case .pomodoroTimer:
-            Text("Pomodoro Timer")
-                .navigationTitle(route.title)
+            PomodoroView()
 
         case .pomodoroHistory:
             Text("Pomodoro History")

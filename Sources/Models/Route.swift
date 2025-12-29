@@ -12,6 +12,9 @@ public enum Route: Hashable, Sendable {
     /// 功能演示页面
     case temp
 
+    /// 智能预算演示页面
+    case smartBudget
+
     // MARK: - 日记应用路由
 
     /// 日记列表
@@ -87,6 +90,8 @@ extension Route {
             return "历史记录"
         case .pomodoroSessionDetail:
             return "会话详情"
+        case .smartBudget:
+            return "智能预算"
         }
     }
 }

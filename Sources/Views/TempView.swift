@@ -281,6 +281,14 @@ struct TempView: View {
                     .buttonStyle(.bordered)
 
                     Button {
+                        router.navigate(to: .smartBudget)
+                    } label: {
+                        Label("智能预算", systemImage: "chart.pie")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.bordered)
+
+                    Button {
                         router.navigateToNewDiary()
                     } label: {
                         Label("新建日记", systemImage: "square.and.pencil")
